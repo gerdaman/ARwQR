@@ -18,6 +18,10 @@
         <a-assets>
             <a-asset-item id="dice" src="https://raw.githubusercontent.com/gerdaman/ARwQR/master/scene.gltf"></a-asset-item>
         </a-assets>
+       
+        <a-assets>
+            <a-asset-item id="barrel" src="https://raw.githubusercontent.com/gerdaman/ARwQR/master/barrel/scene.gltf"></a-asset-item>
+        </a-assets>  
             
         <a-marker type='barcode' value='1'>
             <a-box position='0 0.5 0' color="yellow"></a-box>
@@ -54,6 +58,13 @@
             <a-entity
                 gltf-model="#dice"
                 scale="0.02">
+            </a-entity>
+        </a-marker>
+            
+        <a-marker id="barrel" type='barcode' value='10'>
+            <a-entity
+                gltf-model="#barrel"
+                scale="1">
             </a-entity>
         </a-marker>
        
