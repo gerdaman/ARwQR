@@ -23,6 +23,10 @@
             <a-asset-item id="barrel" src="https://raw.githubusercontent.com/gerdaman/ARwQR/master/barrel/barrel.gltf.gltf"></a-asset-item>
         </a-assets>  
             
+         <a-assets>
+            <a-asset-item id="house" src="https://raw.githubusercontent.com/gerdaman/QR/master/247_House%2015_obj.obj"></a-asset-item>
+        </a-assets>    
+            
         <a-marker type='barcode' value='1'>
             <a-box position='0 1 0' color="yellow"></a-box>
         </a-marker>
@@ -52,6 +56,14 @@
                 gltf-model="#animated-asset"
                 position='0 1 0'
                 scale="0.6 0.6 0.6">
+            </a-entity>
+        </a-marker>
+            
+         <a-marker type='barcode' value='8'>
+            <a-entity
+                scale="0.02 0.02 0.02"
+                rotate="90 90 0"
+                obj-model="obj: #house">
             </a-entity>
         </a-marker>
         
